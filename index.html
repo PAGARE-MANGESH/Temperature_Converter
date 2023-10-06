@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="converter-container">
+        <h2 id="title">Temperature Converter</h2>
+        <label for="temperature">Enter Temperature</label><br><br>
+        <input type="number" id="temperature" placeholder="Enter temperature" required><br><br>
+        <select id="unit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select><br><br>
+        <button onclick="convertTemperature()" id="cnvbtn">Convert</button>
+        <h3>Conversion Result:</h3>
+        <p id="result"></p>
+        <p id="message"></p>
+
+        <div id="history-container">
+            <h3>Conversion History:</h3>
+            <ol type="1" id="history-list"></ol>
+            <button onclick="clearHistory()" id="clrbtn">Clear History</button>
+        </div>
+    </div>
+    <script src="vanila-tilt.js"> </script>
+    <script src='logic.js'> </script>
+</body>
+
+</html>

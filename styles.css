@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(238, 174, 202, 0.542);
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.699) 0%, rgba(148, 188, 233, 0.732) 100%);
+    /* background-color: #93afbd; */
+}
+
+#title {
+    color: #4c757d;
+}
+
+#temperature {
+    min-height: 25px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+#temperature:hover {
+    transition: all 0.8s linear;
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+}
+
+
+#unit {
+    text-align: center;
+    align-items: center;
+    min-height: 25px;
+    width: 150px;
+}
+
+#unit:hover {
+    transition: all 0.8s linear;
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+}
+
+#cnvbtn {
+    text-align: center;
+    align-items: center;
+    min-height: 25px;
+    width: 150px;
+}
+
+#cnvbtn:hover {
+    transition: all 0.8s linear;
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+}
+
+#clrbtn {
+    text-align: center;
+    align-items: center;
+    min-height: 25px;
+    width: 150px;
+}
+
+#clrbtn:hover {
+    transition: all 0.8s linear;
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+
+}
+
+#converter-container {
+    text-align: center;
+    background-color: #c1bebe;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border: rgb(0, 0, 0);
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+}
+
+
+#converter-container:hover {
+    transition: all 0.8s linear;
+    filter: drop-shadow(0 0 0.5rem rgba(2, 2, 2, 0.250));
+}
+
+
+
+#history-container {
+    margin-top: 20px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+
+
+
+@media (max-width : 900) {
+
+    #converter-container {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: rgba(238, 174, 202, 0.542);
+        background: radial-gradient(circle, rgba(238, 174, 202, 0.699) 0%, rgba(148, 188, 233, 0.732) 100%);
+    }
+}
